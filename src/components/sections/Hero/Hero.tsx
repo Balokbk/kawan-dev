@@ -1,3 +1,4 @@
+import Button from '@/components/ui/Button';
 import { Container, Content, Name, Photo, Role, Description, Buttons } from './Hero.styles';
 
 export default function Hero() {
@@ -12,7 +13,12 @@ export default function Hero() {
                     Desenvolvedor apaixonado por criar aplicações modernas, escaláveis e bem estruturadas utilizando tecnologias como React, Next.js, Node.js e TypeScript.
                 </Description>
                 <Buttons>
-                    {/* Os botoes ainda virao aqui */}
+                    <Button href='https://github.com' target='_blank'>
+                        GitHub
+                    </Button>
+                    <Button href='https://linkedin.com' target='_blank'>
+                        LinkedIn
+                    </Button>
                 </Buttons>
             </Content>
         </Container>
