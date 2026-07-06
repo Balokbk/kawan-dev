@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Section = styled.section`
     min-height: 100vh;
 
     display: flex;
