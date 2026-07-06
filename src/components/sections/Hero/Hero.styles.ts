@@ -12,9 +12,26 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-    max-width: 1200px;
     width: 100%;
+    max-width: 1200px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 400px;
+
+    gap: 80px;
+
+    align-items: center;
 `;
+
+export const Left = styled.div`
+
+`
+
+export const Right = styled.div`
+    display: flex;
+    justify-content: center;
+`
 
 export const Greeting = styled.span`
     font-size: 1.2rem;
@@ -25,14 +42,14 @@ export const Name = styled.h1`
     margin: 12px 0;
 `;
 
+export const Role = styled.h2`
+    margin-top: 12px;
+    font-size: 2rem;
+`
+
 export const Photo = styled(Image)`
     border-radius: 50%;
     object-fit: cover;
-`;
-
-export const Role = styled.h2`
-    font-size: 2rem;
-    font-weight: 400;
 `;
 
 export const Description = styled.p`
