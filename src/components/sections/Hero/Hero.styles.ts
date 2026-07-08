@@ -76,3 +76,30 @@ export const Buttons = styled.div`
     gap: 16px;
     margin-top: 40px;
 `;
+
+export const ScrollIndicator = styled.a`
+
+    position:absolute;
+
+    bottom:2rem;
+
+    left:50%;
+
+    color:${({theme}) => theme.colors.primary};
+
+    transition:.25s;
+
+    svg{
+
+        font-size:2.5rem;
+
+    }
+
+    &:hover{
+
+        transform:translateY(-4px);
+        color:${({theme}) => theme.colors.secondary};
+
+    }
+
+`;

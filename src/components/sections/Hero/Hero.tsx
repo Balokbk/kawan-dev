@@ -1,7 +1,7 @@
 import SocialButton from '@/components/ui/SocialButton';
 import Container from '@/components/ui/Container';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Section, Content, Left, Right, Name, Photo, Role, Description, Buttons } from './Hero.styles';
+import { FaGithub, FaLinkedin, FaChevronDown } from 'react-icons/fa';
+import { Section, Content, Left, Right, Name, Photo, Role, Description, Buttons, ScrollIndicator } from './Hero.styles';
 import { social } from '@/data/social';
 
 export default function Hero() {
@@ -24,6 +24,9 @@ export default function Hero() {
                                 LinkedIn
                             </SocialButton>
                         </Buttons>
+                        <ScrollIndicator href="#about" aria-label="Ir para a seção Sobre">
+                            <FaChevronDown/>
+                        </ScrollIndicator>
                     </Left>
                     <Right>
                         <Photo src="/images/profile.jpg" height="340" width="340" alt="Kawan Balonecker Knupp" />
