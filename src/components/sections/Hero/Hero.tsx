@@ -2,6 +2,7 @@ import SocialButton from '@/components/ui/SocialButton';
 import Container from '@/components/ui/Container';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Section, Content, Left, Right, Name, Photo, Role, Description, Buttons } from './Hero.styles';
+import { social } from '@/data/social';
 
 export default function Hero() {
     return(
@@ -16,10 +17,10 @@ export default function Hero() {
                             Desenvolvedor apaixonado por criar aplicações modernas, escaláveis e bem estruturadas utilizando tecnologias como React, Next.js, Node.js e TypeScript.
                         </Description>
                         <Buttons>
-                            <SocialButton href='https://github.com' icon={<FaGithub />}>
+                            <SocialButton href={social.github} icon={<FaGithub />}>
                                 GitHub
                             </SocialButton>
-                            <SocialButton href='https://linkedin.com' icon={<FaLinkedin />}>
+                            <SocialButton href={social.linkedin} icon={<FaLinkedin />}>
                                 LinkedIn
                             </SocialButton>
                         </Buttons>
