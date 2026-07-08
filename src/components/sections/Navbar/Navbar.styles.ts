@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Header = styled.header`
     position: fixed;
+    background-color: ${({theme}) => theme.colors.surface};
 
     top: 0;
     left: 0;
@@ -25,7 +26,7 @@ export const Logo = styled.a`
     font-size: 1.5rem;
     font-weight: bold;
     
-    span {
+    svg{
         color: ${({ theme }) => theme.colors.primary};
     }
 `;

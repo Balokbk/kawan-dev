@@ -1,11 +1,11 @@
 const theme = {
     colors: {
-        background: '#0F0F0F',
-        surface: '#1A1A1A',
-        primary: '#F5F5F5',
-        secondary: '#E0E0E0',
-        text: '#FF4081',
-        border: '#FFFFFF',
+        background: '#232925',
+        surface: '#101411',
+        primary: '#32ffb7',
+        secondary: '#0FBF3E',
+        text: '#F2F5F3',
+        border: '#F2F5F3',
     }
 };
 

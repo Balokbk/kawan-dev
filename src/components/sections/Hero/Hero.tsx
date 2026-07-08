@@ -25,7 +25,7 @@ export default function Hero() {
                         </Buttons>
                     </Left>
                     <Right>
-                        <Photo src="/images/profile.jpg" height="200" width="200" alt="Kawan Balonecker Knupp" />
+                        <Photo src="/images/profile.jpg" height="340" width="340" alt="Kawan Balonecker Knupp" />
                     </Right>
                 </Content>
             </Container>

@@ -4,9 +4,8 @@ import { Header, Wrapper, Logo, Nav, NavLink } from './Navbar.styles';
 
 const NavItens = [
     { label: 'Sobre', href: '#about' },
-    { label: 'Tecnologias', href: '#technologies' },
+    { label: 'Tech & Formação', href: '#skills' },
     { label: 'Projetos', href: '#projects' },
-    { label: 'Formação', href: '#education' },
     { label: 'Contato', href: '#contact' },
 ];
 

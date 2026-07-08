@@ -19,7 +19,7 @@ export const Content = styled.div`
 
     grid-template-columns: 1fr 400px;
 
-    gap: 80px;
+    gap: 100px;
 
     align-items: center;
 `;
@@ -33,17 +33,13 @@ export const Right = styled.div`
     justify-content: center;
 `
 
-export const Greeting = styled.span`
-    font-size: 1.2rem;
-`;
-
 export const Name = styled.h1`
-    font-size: 4rem;
-    margin: 12px 0;
+    font-size: 3.2rem;
+    margin: 15px 0;
 `;
 
 export const Role = styled.h2`
-    margin-top: 12px;
+    margin-top: 5px;
     font-size: 2rem;
 `
 
@@ -54,8 +50,8 @@ export const Photo = styled(Image)`
 
 export const Description = styled.p`
     max-width: 650px;
-    margin-top: 24px;
-    line-height: 1.8;
+    margin-top: 20px;
+    line-height: 1.4;
 `;
 
 export const Buttons = styled.div`
