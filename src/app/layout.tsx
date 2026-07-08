@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import StyledComponentsRegistry from "@/lib/registy";
 import Providers from "@/providers/ThemeProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "KawanDev. | Desenvolvedor Full Stack",
@@ -56,6 +57,7 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <Providers>
             {children}
+            <Analytics />
           </Providers>
         </StyledComponentsRegistry>
       </body>
