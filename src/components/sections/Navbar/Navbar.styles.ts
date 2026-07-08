@@ -25,8 +25,10 @@ export const Wrapper = styled.div`
 export const Logo = styled.a`
     font-size: 1.5rem;
     font-weight: bold;
-    
-    svg{
+        color: ${({ theme }) => theme.colors.text};
+        text-decoration: none;
+
+    &:hover{
         color: ${({ theme }) => theme.colors.primary};
     }
 `;
@@ -38,7 +40,8 @@ export const Nav = styled.nav`
 
 export const NavLink = styled.a`
     position: relative;
-
+    color: ${({ theme }) => theme.colors.text};
+    text-decoration: none;
     transition: .25s;
 
     &:hover{
