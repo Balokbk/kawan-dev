@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import device from '@/style/breakpoints'
 
 export const Section = styled.section`
     min-height: 100vh;
@@ -9,6 +10,10 @@ export const Section = styled.section`
     justify-content: center;
 
     padding: 0 8rem;
+
+    @media ${device.mobile}{
+        padding: 0 1rem;
+    }
 `;
 
 export const Content = styled.div`
@@ -22,6 +27,14 @@ export const Content = styled.div`
     gap: 100px;
 
     align-items: center;
+
+    @media ${device.mobile}{
+        display: flex;
+        max-width: 480px;
+        background-color: black;
+        gap: 0;
+
+    }
 `;
 
 export const Left = styled.div`
@@ -36,6 +49,10 @@ export const Right = styled.div`
 export const Name = styled.h1`
     font-size: 3.2rem;
     margin: 15px 0;
+
+    @media ${device.mobile}{
+        font-size: 1.5rem;
+    }
 `;
 
 export const Role = styled.h2`

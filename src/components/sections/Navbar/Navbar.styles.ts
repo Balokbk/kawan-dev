@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import device from '@/style/breakpoints';
 
 export const Header = styled.header`
     position: fixed;
@@ -20,6 +21,12 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media ${device.mobile}{
+        max-width: 480px;
+        align-items: center;
+        margin-left: 0;
+    }
 `;
 
 export const Logo = styled.a`
