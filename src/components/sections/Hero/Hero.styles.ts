@@ -23,15 +23,15 @@ export const Content = styled.div`
     display: grid;
 
     grid-template-columns: 1fr 400px;
-
+    
     gap: 100px;
-
+    
     align-items: center;
-
+    
     @media ${device.mobile}{
         display: flex;
-        max-width: 480px;
-        background-color: black;
+        flex-direction: column;
+        grid-template-columns: none;
         gap: 0;
 
     }
@@ -49,10 +49,6 @@ export const Right = styled.div`
 export const Name = styled.h1`
     font-size: 3.2rem;
     margin: 15px 0;
-
-    @media ${device.mobile}{
-        font-size: 1.5rem;
-    }
 `;
 
 export const Role = styled.h2`
@@ -63,6 +59,11 @@ export const Role = styled.h2`
 export const Photo = styled(Image)`
     border-radius: 50%;
     object-fit: cover;
+
+        @media ${device.mobile} {
+        width: 160px;
+        height: 160px;
+    }
 `;
 
 export const Description = styled.p`
@@ -100,6 +101,10 @@ export const ScrollIndicator = styled.a`
         transform:translateY(-4px);
         color:${({theme}) => theme.colors.secondary};
 
+    }
+
+    @media ${device.mobile}{
+        opacity: 0;
     }
 
 `;
